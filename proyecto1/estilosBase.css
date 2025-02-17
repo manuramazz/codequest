@@ -1,0 +1,40 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #6164FA;
+}
+
+header{
+        display: flex; /* Usamos flexbox para alinear los elementos */
+        justify-content: space-between; /* Distribuye el espacio entre los elementos */
+        align-items: center; /* Alinea los elementos a la misma altura */
+    padding: 10px 20px; /* Opcional: agrega un poco de espacio alrededor */
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #6164FA;
+
+}
+
+nav{
+    padding: 0;
+    margin: 0;
+    background-color: #7ACDFA;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    background-color: #BBD7F0;
+}
+
+aside{
+    padding: 0;
+    margin: 0;
+    background-color: #6164FA;
+}
