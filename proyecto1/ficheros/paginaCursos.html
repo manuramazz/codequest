@@ -6,89 +6,99 @@
         <meta name="description" content="Página de búsqueda de cursos" />
         <meta name="lang" content="es-ES"/>
         <meta name="author" content="Rubén Pérez Sangiao, Manuel Ramallo Blanco">
+        <link rel="stylesheet" href="/proyecto1/estilos/paginaCursos.css">
 
 
     </head>
-    <body> 
-         <figure><a href="../index.html"> <img src="/proyecto1/imagenes/logo.png" width="100" height="100"></a></figure>
+    <body>
+        <video class="VideoFondo" autoplay muted loop> 
+            <source src="/proyecto1/imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
+        </video>
+        <header>
+            <figure><a href="../index.html"> <img src="/proyecto1/imagenes/logoCodequestEntero.png"></a></figure>
+        </header>
+        <div class = "container">
+            <aside>
+                <h3>Filtros</h3>
+                <ul>
+                    <li>
+                        Nivel
+                        <form>
+                            <label>
+                                <input type="radio" name="nivel" value="básico"> básico
+                            </label><br>
+                    
+                            <label>
+                                <input type="radio" name="nivel" value="medio"> medio
+                            </label><br>
+                    
+                            <label>
+                                <input type="radio" name="nivel" value="avanzado"> avanzado
+                            </label><br>
+                        </form>
+                    </li>
+    
+                    <li>
+                        Lenguaje
+                        <form>
+                            <label>
+                                <input type="radio" name="lenguaje" value="c"> c
+                            </label><br>
+                    
+                            <label>
+                                <input type="radio" name="lenguaje" value="python"> python
+                            </label><br>
+                    
+                            <label>
+                                <input type="radio" name="lenguaje" value="java"> java
+                            </label><br>
+                        </form>
+                    </li>
+                </ul>
+             </aside>
          <section>
-            <ul>
+            <ul class="lista_cursos">
                 <li>
-                <h2>Curso básico de C</h2>
-                <img src="../imagenes/c.png" width="30" height="30" alt="Curso de C">
-        
-                <h3>Lecciones:</h3>
-                <ul>
-                    <li><a href="lecciones.html">Introducción a C</a></li>
-                    <li>Tipos de datos</li>
-                    <li>Funciones</li>
-                    <li>Punteros</li>
-                </ul>
-        
-                <h3>Logros:</h3>
-                <ul>
-                    <li>Creación de un programa ejemplo</li>
-                    <li>Curso completado</li>
-                </ul>
-                </li>
-
-                <li>
-                    <h2>Curso avanzado de GO</h2>
-                    <img src="../imagenes/go.png" width="30" height="30" alt="Curso de GO">
-            
-                    <h3>Lecciones:</h3>
-                    <ul>
-                        <li>Leccion 1</li>
-                        <li>leccion 2</li>
+                <h2><img src="../imagenes/c.png" width="30" height="30" alt="Curso de C">Curso básico de C</h2>
+                <div class=" container_listas_curso">
+                    
+                    <ul class="lista_lecciones">
+                        <h3>Lecciones:</h3>
+                        <li><a href="lecciones.html">Introducción a C</a></li>
+                        <li>Tipos de datos</li>
+                        <li>Funciones</li>
+                        <li>Punteros</li>
                     </ul>
-            
-                    <h3>Logros:</h3>
-                    <ul>
-                        <li>50% del curso</li>
-                        <li>Contenido básico superado</li>
-                        <li>Maestro en GO</li>
+        
+                    
+                    <ul class="lista_logros">
+                        <h3>Logros:</h3>
+                        <li>Creación de un programa ejemplo</li>
+                        <li>Curso completado</li>
                     </ul>
                     </li>
+                </div>
+                <div class=" container_listas_curso">
+                    <li>
+                        <h2><img src="../imagenes/insta.png" width="30" height="30" alt="Curso de GO">Curso avanzado de GO</h2>
+                        
+                            <h3>Lecciones:</h3>
+                            <ul class="lista_lecciones">
+                                <li>Leccion 1</li>
+                                <li>leccion 2</li>
+                            </ul>
+            
+                            <h3>Logros:</h3>
+                            <ul class="lista_logros">
+                                <li>50% del curso</li>
+                                <li>Contenido básico superado</li>
+                                <li>Maestro en GO</li>
+                            </ul>
+                    </li>
+                </div>
             </ul>
-         </section>
 
-         <aside>
-            <h3>Filtros</h3>
-            <ul>
-                <li>
-                    Nivel
-                    <form>
-                        <label>
-                            <input type="radio" name="nivel" value="básico"> básico
-                        </label><br>
-                
-                        <label>
-                            <input type="radio" name="nivel" value="medio"> medio
-                        </label><br>
-                
-                        <label>
-                            <input type="radio" name="nivel" value="avanzado"> avanzado
-                        </label><br>
-                    </form>
-                </li>
-
-                <li>
-                    Lenguaje
-                    <form>
-                        <label>
-                            <input type="radio" name="lenguaje" value="c"> c
-                        </label><br>
-                
-                        <label>
-                            <input type="radio" name="lenguaje" value="python"> python
-                        </label><br>
-                
-                        <label>
-                            <input type="radio" name="lenguaje" value="java"> java
-                        </label><br>
-                    </form>
-                </li>
-            </ul>
-         </aside>
+        </section>
+        </div>
     </body>
 </html>

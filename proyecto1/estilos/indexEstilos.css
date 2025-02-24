@@ -1,5 +1,6 @@
 @import url(../estilosBase.css);
 
+
 #logo {
     display: flex;
     align-items: center; /* Asegura que la imagen y el texto estén alineados */
@@ -8,3 +9,4 @@
 #Titulo {
     text-decoration: none; /* Opcional: para quitar el subrayado del enlace */
 }
+

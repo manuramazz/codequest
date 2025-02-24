@@ -1,0 +1,73 @@
+@import url(../estilosBase.css);
+header {
+    background-color: #6164FA;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+header p {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header img {
+    margin-right: 15px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid white;
+}
+
+/* Contenedor principal que divide la pantalla */
+.container {
+    display: flex;
+}
+
+aside {
+    width: 220px;
+    background-color: #1faffa;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    overflow-y: auto;
+}
+
+section {
+    flex-grow: 1; 
+    background-color: #7acdfa;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h2 img {
+    margin-right: 10px;
+}
+
+.lista_cursos li {
+    border: 1px solid #000;
+    background-color: #b4ddf4;
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.container_listas_curso {
+    display: flex;
+}
+
+.lista_cursos .lista_logros li,.lista_cursos .lista_lecciones li{
+    border: 0;
+    background-color: #b4ddf4;
+    padding: 0;
+    margin-bottom: 10px20px;
+    list-style-type: disc;
+    
+}
+.lista_lecciones{
+    flex: 0 0 50%;
+}
