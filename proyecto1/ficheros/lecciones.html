@@ -8,27 +8,46 @@
 
     </head>
     <body> 
+        <video class="VideoFondo" autoplay muted loop> 
+            <source src="/proyecto1/imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
+        </video>
         <header>
-            <p><a href="/proyecto1/index.html"><img src="/proyecto1/imagenes/logo.png" width="100" height="100"></a>CODEQUEST </p>
-            <hr>
+            <figure><a href="../index.html"> <img src="/proyecto1/imagenes/logoCodequestEntero.png"></a></figure>
         </header>
         <main>
-            <h2><Strong>Curso básico de C</Strong></h2>
-            <h3>Profesor: Profesor1</h3>
-            <img src="/proyecto1/imagenes/c.png" width="100" height="100">
-            <h4>Lección 1: Introduccion a C</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a interdum mauris, ac consequat velit.
-            </p>
-            <p>Bibliografía: <a href="../imagenes/Lenguaje-C.pdf" download="Lenguaje-C.pdf">Manual de C</a></p>
+            <div class="titulo_leccion">
+                <figure><img src="/proyecto1/imagenes/c.png" class="imagen_titulo"></figure>
+                <div class="texto_titulo">
+                    <h2><Strong>Curso básico de C</Strong></h2>
+                    <h3>Profesor: Profesor1</h3>
+                </div>
+            </div>
+            <div class="contenido">
+            <section>
+                <h3>Lección 1: Introduccion a C</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum faucibus leo nec tempor. Quisque nec efficitur neque. Phasellus sodales erat vitae suscipit ultrices. Phasellus tempus porta nunc. Integer dictum augue a leo lacinia auctor. 
+                    Donec non nunc at turpis egestas bibendum non nec est. Duis mauris arcu, dapibus non tellus sit amet, porttitor varius massa. Nunc dui elit, facilisis nec quam nec, gravida porta mauris. Maecenas eget pulvinar erat. In sit amet lectus nisi. 
+                    Duis facilisis purus sit amet vehicula commodo. Ut vitae facilisis mauris. Nam vel sapien magna. Suspendisse id varius mauris.
+                </p>
+                <p>
+                    Praesent vitae metus accumsan, auctor felis eget, tincidunt tellus. Sed auctor, nulla at dignissim faucibus, quam enim ornare nibh, eu fermentum arcu elit id orci. In eget blandit risus, at pulvinar nunc. 
+                    Morbi euismod risus risus, at aliquet elit dictum et. Praesent dui leo, dapibus a aliquet ac, volutpat a nibh. Ut in magna commodo, tristique mi et, fermentum ante. Sed est mauris, iaculis nec malesuada sit amet, facilisis vitae est. 
+                    Etiam velit urna, egestas eu feugiat in, scelerisque vel elit. Suspendisse potenti. Aliquam vitae justo sed elit pulvinar mattis. Suspendisse elementum turpis non dolor congue, eget vulputate arcu lacinia. Nunc bibendum eros non leo ullamcorper, at vehicula massa elementum. 
+                    Cras congue quam et diam dictum ornare. Ut cursus at arcu nec pretium. Ut justo mauris, tincidunt in maximus vitae, consectetur eget ante. Vestibulum fringilla tempor faucibus.
+               
+                </p>
+                <p>Bibliografía: <a href="../imagenes/Lenguaje-C.pdf" download="Lenguaje-C.pdf">Manual de C</a></p>
             
 
-            <video><iframe width="560" height="315" src="https://www.youtube.com/embed/1-qjMS6C960?si=y780ZCBGr0IOle2a" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1-qjMS6C960?si=y780ZCBGr0IOle2a" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <aside>
+                <h3>Foro de discusiones</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a interdum mauris, ac consequat velit. </p>
+            </aside>
+        </div>
         </main>
-        <aside>
-            <h2>Foro de discusiones</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a interdum mauris, ac consequat velit. </p>
-        </aside>
     </body>
 </html>

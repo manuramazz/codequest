@@ -10,10 +10,10 @@ body{
 }
 
 header{
-        display: flex; /* Usamos flexbox para alinear los elementos */
-        justify-content: space-between; /* Distribuye el espacio entre los elementos */
-        align-items: center; /* Alinea los elementos a la misma altura */
-    padding: 10px 20px; /* Opcional: agrega un poco de espacio alrededor */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    padding: 10px 20px;
     margin: 0;
     font-size: large;
     font-weight: bold;
@@ -27,19 +27,16 @@ section{
 }
 
 nav{
-    padding: 0;
-    margin: 0;
-    background-color: #7ACDFA;
+    background-color: #43f3fa;
 }
 
 main{
-    padding: 0;
+    padding: 30px 30px;
     margin: 0;
     background-color: #BBD7F0;
 }
 
 aside{
-    padding: 0;
     margin: 0;
     background-color: #6164FA;
     border: 1px solid #000;

@@ -1,1 +1,39 @@
 @import url(../estilosBase.css);
+
+.contenido {
+    display: flex;
+}
+
+.titulo_leccion {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: #6164fa;
+    justify-content: center; /* Centra horizontalmente la imagen y el texto */
+    width: 100%;
+}
+
+.imagen_titulo {
+    width: 30%;
+    height: auto;
+}
+
+.texto_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el texto */
+    width: 100%;
+    text-align: center; /* Alinea el texto dentro de los elementos */
+}
+
+section{
+    width: 70%;
+    padding: 5px 20px;
+    padding-bottom: 30px;
+}
+aside{
+    width: 30%;
+    padding: 10px 20px;
+    background-color: #acdcf6;
+}
+

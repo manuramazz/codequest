@@ -1,12 +1,47 @@
 @import url(../estilosBase.css);
 
-
-#logo {
+nav {
     display: flex;
-    align-items: center; /* Asegura que la imagen y el texto estén alineados */
+    justify-content: space-around;
+    align-items: center;
 }
 
-#Titulo {
-    text-decoration: none; /* Opcional: para quitar el subrayado del enlace */
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid #000000;
+    text-align:center;
+    flex-grow: 1;
+    text-transform: capitalize;
 }
+
+nav a:hover {
+    background-color: #3082b9;
+    color: white;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+nav button {
+    border: none;
+    cursor: pointer;
+    padding: 5px 8px;
+    background-color: #43f3fa;
+}
+
+nav button:hover {
+    background-color: #ddd;
+}
+
+nav img{
+    margin-top: auto;
+}
+
 

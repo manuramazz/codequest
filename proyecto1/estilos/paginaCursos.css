@@ -24,7 +24,7 @@ hr {
     border: 1px solid white;
 }
 
-/* Contenedor principal que divide la pantalla */
+
 .container {
     display: flex;
 }
@@ -37,10 +37,10 @@ aside {
     overflow-y: auto;
 }
 
-section {
+main {
     flex-grow: 1; 
     background-color: #7acdfa;
-    padding: 20px;
+    padding: 30px;
     overflow-y: auto;
 }
 
@@ -62,9 +62,8 @@ h2 img {
 
 .lista_cursos .lista_logros li,.lista_cursos .lista_lecciones li{
     border: 0;
-    background-color: #b4ddf4;
     padding: 0;
-    margin-bottom: 10px20px;
+    margin-bottom: 10px;
     list-style-type: disc;
     
 }
