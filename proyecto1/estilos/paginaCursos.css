@@ -70,3 +70,32 @@ h2 img {
 .lista_lecciones{
     flex: 0 0 50%;
 }
+
+.buscador_cursos{
+    display: flex;
+    justify-content: center;
+    background-color: #BBD7F0;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    width: 100%;
+    border: 1px solid #000;
+
+}
+button {
+    border: none;
+    padding: 5px 8px;
+    background-color: #BBD7F0;
+}
+button:hover {
+    background-color: #ddd;
+}
+section input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #000000
+}
+ul li{
+    padding-bottom: 20px;
+}
