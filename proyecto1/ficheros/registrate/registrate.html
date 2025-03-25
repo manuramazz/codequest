@@ -4,7 +4,7 @@
         <title>Registrarte</title>
         <meta charset="utf-8">
         <meta name="description" content="La Escuela Técnica Superior de Ingeniería (ETSE) es un centro de la Universidad de Santiago de Compostela encargado de la gestión y la organización de estudios en el ámbito de la ingeniería. La ETSE tiene como misión principal contribuir a la formación integral, en un entorno estimulante de innovación y de relaciones …" />
-        <link rel="stylesheet" href="/proyecto1/estilos/registrateEstilos.css">
+        <link rel="stylesheet" href="/proyecto1/ficheros/registrate/registrateEstilos.css">
 
     </head>
     <body>
@@ -13,21 +13,31 @@
         </video>
        <main>
                 <figure><a href="/proyecto1/index.html"><img src="/proyecto1/imagenes/logoCodequestBloque.png"></a></figure>
-            <ul>
             
-                <li>Correo: <input type="text" size="20" name="txt1" placeholder="Correo electrónico"></label></li>
+            <div class="contenedor">
+                <div class="campo">
+                    <label>Correo: </label>
+                    <input type="text" size="20" name="txt1" placeholder="Correo electrónico">
+                </div>
             
-                <li>Nombre de Usuario:<input type="text" size="20" name="txt2" placeholder="Nombre de usuario"></label></li> 
+                <div class="campo">
+                    <label>Nombre de Usuario:</label> 
+                    <input type="text" size="20" name="txt2" placeholder="Nombre de usuario"></div> 
             
-                <li>Contraseña:<input type="password" size="20" name="txt3" placeholder="Contraseña"></label></li>
+                <div class="campo">
+                    <label> Contraseña:</label>
+                    <input type="password" size="20" name="txt3" placeholder="Contraseña"></div>
 
-                <li>Repetir Contraseña:<input type="password" size="20" name="txt4" placeholder="Repetir contraseña"></label></li>
-            </ul>
+                <div class="campo">
+                    <label>Repetir Contraseña:</label> 
+                    <input type="password" size="20" name="txt4" placeholder="Repetir contraseña"></div>
+            
                 <button>
                     <a href="/proyecto1/index.html">REGISTRARSE</a>
                 </button> 
-                <p class="texto">¿Ya tienes una cuenta? Inicia sesión <a href="/proyecto1/ficheros/iniciarSesion.html">aquí</a></p>
-        </main> 
+                <p class="texto">¿Ya tienes una cuenta? Inicia sesión <a href="/proyecto1/ficheros/iniciarSesion/iniciarSesion.html">aquí</a></p>
+            </div>
+            </main> 
             
     </body>
 </html>

@@ -5,7 +5,8 @@ body{
     padding: 0;
     margin: 0 150px;
     box-sizing: border-box;
-    background: #6164FA;
+    background-color: #43f3fa;
+
 
 }
 
@@ -30,7 +31,8 @@ nav{
 main{
     padding: 30px 30px;
     margin: 0;
-    background-color: #BBD7F0;
+    background-color: #c4d3df;
+    border: 1px solid #000;
 }
 
 aside{
@@ -51,4 +53,11 @@ aside{
 
 .Titulo{
     padding-right: 15px;
+}
+
+section{
+    border: 1px solid #000;
+    background-color: #BBD7F0;
+    padding: 2% 5%;
+    
 }

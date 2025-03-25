@@ -1,4 +1,4 @@
-@import url(../estilosBase.css);
+@import url(/proyecto1/estilosBase.css);
 
 .contenido {
     display: flex;
@@ -30,7 +30,6 @@ section{
     width: 70%;
     padding: 5px 20px;
     padding-bottom: 30px;
-    border: 1px solid #000;
 }
 aside{
     width: 30%;
