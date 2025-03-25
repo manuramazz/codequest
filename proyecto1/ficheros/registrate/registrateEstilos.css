@@ -1,0 +1,58 @@
+@import url(../estilosBase.css);
+
+/* Centrar el contenido del main */
+main {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los objetos del main */
+    z-index: 1; /* Coloca el contenido por encima del video */
+    background-color: #6164FA;  /* Fondo semitransparente para mejor legibilidad */
+    margin: 15% 25% 0 25%; /* margenes de la caja para todos los lados arriba izquierda abajo derecha*/
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    border-radius: 10px;
+}
+
+/* Estilos para la lista */
+main ul {
+    width: 62%; /* Ancho de la lista */
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra el texto dentro de la lista */
+}
+
+/* Estilos para los elementos de la lista */
+main ul li {
+    display: flex; /* Convierte el <li> en un contenedor flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    margin: 5% 0; /* Espaciado entre elementos */
+}
+
+
+
+/* Estilos para la imagen */
+main figure {
+    margin: 0;
+    text-align: center; /* Centra la imagen */
+}
+
+main button{
+    background-color: #8aafbb;
+    border: 2px solid #000;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+a:visited, .texto:visited{
+    color: black;
+}
