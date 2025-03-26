@@ -61,6 +61,9 @@ main button {
     color: rgb(0, 0, 0);
 }
 
+.texto a:visited, .texto a:link, button a:link, button a:visited {
+    color: black;
+}
 
 /* Pequeñas pantallas de ordenador - 1200px */
 @media (max-width: 1199px) {

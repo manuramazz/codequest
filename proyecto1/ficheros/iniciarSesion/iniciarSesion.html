@@ -12,16 +12,38 @@
             <source src="/proyecto1/imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
         </video>
        <main>
-                <figure><a href="/proyecto1/index.html"><img src="/proyecto1/imagenes/logoCodequestBloque.png"></a></figure>
-            <ul>
+            <figure>
+                <a href="/proyecto1/index.html">
+                    <picture>
+                        <!--mas de 1200px-->
+                        <source media="(min-width: 1200px)" srcset="/proyecto1/imagenes/logoCodequestBloque.png" width="300px" height="auto">
+                        <!--ordenadores normales-->
+                        <source media="(min-width: 992px)" srcset="/proyecto1/imagenes/logoCodequestBloque.png" width="250px" height="auto">
+                        <!--tablets-->
+                        <source media="(min-width: 768px)" srcset="/proyecto1/imagenes/nombreCodequestBloque.png" width="150px" height="auto">
+                        <!--moviles-->
+                        <img src="/proyecto1/imagenes/logo.png" alt="Logo de CODEQUEST" width="100px" height="auto">
+                </picture>
+                </a>
+            </figure>
+        
+            <div class="contenedor">
+                
             
-                <li>Nombre de Usuario:<input type="text" size="20" name="txt2" placeholder="Nombre de usuario"></label></li> 
+                <div class="campo">
+                    <label>Nombre de Usuario:</label> 
+                    <input type="text" size="20" name="txt2" placeholder="Nombre de usuario"></div> 
             
-                <li>Contraseña:<input type="text" size="20" name="txt3" placeholder="Contraseña"></label></li>
-            </ul>
+                <div class="campo">
+                    <label> Contraseña:</label>
+                    <input type="password" size="20" name="txt3" placeholder="Contraseña"></div>
+
+                
                 <button>
                     <a href="/proyecto1/index.html">INICIAR SESIÓN</a>
-                </button>
+                </button> 
+            
+            </div>
        </main> 
     </body>
 </html>

@@ -1,1 +1,15 @@
 @import url(/proyecto1/estilosBase.css);
+
+h4{
+    font-weight: strong;
+}
+
+.columnas_config{
+    column-count: 2;
+}
+
+
+section{
+    padding-left: 15%;
+    padding-right: 15%;
+}  

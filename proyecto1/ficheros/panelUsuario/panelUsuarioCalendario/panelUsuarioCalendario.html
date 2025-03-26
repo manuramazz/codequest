@@ -8,6 +8,9 @@
 
     </head>
     <body> 
+        <video class="VideoFondo" autoplay muted loop> 
+            <source src="/proyecto1/imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
+        </video>
         <header>
             <figure class="logo">
                 <a href ="/proyecto1/index.html"><img src="/proyecto1/imagenes/logoCodequestEntero.png"></a>
@@ -16,15 +19,16 @@
                 <a href="/proyecto1/ficheros/registrate.html">Iniciar sesión/Registrarte</a>
             </div>
         </header>
-        <h2>><strong>PANEL DE USUARIO</strong></h2>
-        <section>
-            <h4><a href="/proyecto1/ficheros/panelUsuario/panelUsuarioCursos/panelUsuarioCursos.html">Cursos</a></h4>
-        </section>
-        <section>
-            <h4>Calendario</h4>
-            <p>Calendario...</p>
-            
-        </section>
-        
+        <main>
+            <h2><strong>PANEL DE USUARIO</strong></h2>
+            <section>
+                <h4><a href="/proyecto1/ficheros/panelUsuario/panelUsuarioCursos/panelUsuarioCursos.html">Cursos</a></h4>
+            </section>
+            <section>
+               <h4>Calendario</h4>
+                <p id ="texto1">Aquí puedes consultar el calendario, con el que te podrás organizar. En <span id ="code">codequest</span> tú mismo te pones tus metas!</p>
+                <div id= "cal"><input type="date" id="fecha" name="fecha"></div>
+            </section>
+        </main>
     </body>
 </html>

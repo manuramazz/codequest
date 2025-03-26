@@ -13,14 +13,18 @@
         </video>
        <main>
                 <figure>
-                    <picture>
-                        <source media="(max-width: 1199px)" srcset="/proyecto1/imagenes/logoCodequestBloque.png">
-                        <source media="(max-width: 991px)" srcset="/proyecto1/imagenes/nombreCodequestBloque.png">
-                        <source media="(max-width: 767px)" srcset="/proyecto1/imagenes/logo.png">
-                        <a href="/proyecto1/index.html">
-                            <img src="/proyecto1/imagenes/logoCodequestBloque.png" alt="Logo de CODEQUEST">
-                        </a>
+                    <a href="/proyecto1/index.html">
+                        <picture>
+                            <!--mas de 1200px-->
+                            <source media="(min-width: 1200px)" srcset="/proyecto1/imagenes/logoCodequestBloque.png" width="300px" height="auto">
+                            <!--ordenadores normales-->
+                            <source media="(min-width: 992px)" srcset="/proyecto1/imagenes/logoCodequestBloque.png" width="250px" height="auto">
+                            <!--tablets-->
+                            <source media="(min-width: 768px)" srcset="/proyecto1/imagenes/nombreCodequestBloque.png" width="150px" height="auto">
+                            <!--moviles-->
+                            <img src="/proyecto1/imagenes/logo.png" alt="Logo de CODEQUEST" width="100px" height="auto">
                     </picture>
+                    </a>
                 </figure>
             
             <div class="contenedor">

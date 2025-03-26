@@ -1,48 +1,55 @@
 @import url(/proyecto1/estilosBase.css);
 
-/* Centrar el contenido del main */
+/* Estilos BASE para ordenador - más de 1200px  */
 main {
     border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente los objetos del main */
-    z-index: 1; /* Coloca el contenido por encima del video */
-    background-color: #6164FA;  /* Fondo semitransparente para mejor legibilidad */
-    margin: 15% 25% 0 25%; /* margenes de la caja para todos los lados arriba izquierda abajo derecha*/
-    padding: 20px; /* Espaciado interno */
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    align-items: center;
+    z-index: 1;
+    background-color: #6164FA;
+    margin: 15% 25% 0 25%;
+    padding: 20px;
+    box-sizing: border-box;
     border-radius: 10px;
 }
 
-/* Estilos para la lista */
-main ul {
-    width: 62%; /* Ancho de la lista */
-    list-style-type: none; /* Quita los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    text-align: center; /* Centra el texto dentro de la lista */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Estilos para los elementos de la lista */
-main ul li {
-    display: flex; /* Convierte el <li> en un contenedor flexible */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    margin: 5% 0; /* Espaciado entre elementos */
+.campo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    text-align: right;
+    width: 100%;
 }
 
+.campo label {
+    min-width: 150px;
+    flex: 1;
+    text-align: left;
+}
 
+.campo input {
+    min-width: 150px;
+    flex: 1;
+}
 
-/* Estilos para la imagen */
 main figure {
     margin: 0;
-    text-align: center; /* Centra la imagen */
+    text-align: center;
 }
 
-main button{
+main button {
     background-color: #8aafbb;
     border: 2px solid #000;
-    padding: 5px 5px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
     color: black;
@@ -50,9 +57,69 @@ main button{
 }
 
 .texto {
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
 }
-a:visited, .texto:visited{
-    color: black;
+
+
+/* Pequeñas pantallas de ordenador - 1200px */
+@media (max-width: 1199px) {
+    main {
+        margin: 16% 20% 0 20%;
+    }
+    
+    .campo label {
+        min-width: 180px;
+    }
+    
+    .texto {
+        font-size: 14px;
+    }
+}
+
+/* Tablets - 992px */
+@media (max-width: 991px) {
+    main {
+        margin: 30% 15% 0 15%;
+    }
+    
+    .campo label {
+        min-width: 150px;
+    }
+    
+    main button {
+        padding: 8px 15px;
+    }
+}
+
+/* Moviles - 768px */
+@media (max-width: 767px) {
+    main {
+        margin: 50% 5% 0 5%;
+    }
+    
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .campo label {
+        min-width: 120px;
+        text-align: left;
+    }
+    
+    .campo input {
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    main button {
+        padding: 5px 10px;
+        width: 100%;
+    }
+    
+    .texto {
+        font-size: 13px;
+    }
 }

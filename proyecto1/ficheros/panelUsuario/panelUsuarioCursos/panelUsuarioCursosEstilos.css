@@ -1,1 +1,20 @@
 @import url(/proyecto1/estilosBase.css);
+section a:link, a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #5f5b5b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #333333;
+}
+
+p, ol{
+    text-align: center;
+    list-style-position: inside;
+}

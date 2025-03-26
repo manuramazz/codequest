@@ -1,28 +1,4 @@
 @import url(/proyecto1/estilosBase.css);
-header {
-    background-color: #6164FA;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 5px 0px;
-}
-
-header p {
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0;
-}
-
-header img {
-    margin-right: 15px;
-}
-
-hr {
-    width: 100%;
-    border: 1px solid white;
-}
 
 
 .container {
@@ -89,6 +65,7 @@ button {
 }
 button:hover {
     background-color: #ddd;
+    cursor:pointer;
 }
 section input {
     width: 300px;

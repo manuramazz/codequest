@@ -11,10 +11,10 @@ body{
 }
 
 header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
     margin: 0;
     font-size: large;
     font-weight: bold;
@@ -52,7 +52,28 @@ aside{
 }
 
 .Titulo{
-    padding-right: 15px;
+    width: 27.2%;
+    height: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Titulo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.Titulo a:visited, .Titulo a:link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(153, 153, 237);
 }
 
 section{
@@ -60,4 +81,8 @@ section{
     background-color: #BBD7F0;
     padding: 2% 5%;
     
+}
+
+a:visited, a:link{
+    color:black;
 }

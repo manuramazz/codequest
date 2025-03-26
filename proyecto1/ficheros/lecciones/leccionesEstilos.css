@@ -9,12 +9,15 @@
     align-items: center;
     border: 1px solid #000;
     background-color: #6164fa;
-    justify-content: center; /* Centra horizontalmente la imagen y el texto */
     width: 100%;
 }
 
+figure{
+    width: 20%;
+}
+
 .imagen_titulo {
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
