@@ -25,7 +25,8 @@ main{
     align-items: center;
     justify-items: center;
     border: 2px solid #000000;
-    background-color: #3c7bfa;
+    background-color: #2f5ebd;
+    color: white;
 }
 
 #parte1{
