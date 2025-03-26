@@ -1,6 +1,6 @@
 @import url(/proyecto1/estilosBase.css);
 
-/* Estilos BASE para desktop (1200px y mayor) */
+/* Estilos BASE para ordenador - más de 1200px  */
 main {
     border: 1px solid #000;
     align-items: center;
