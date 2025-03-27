@@ -90,7 +90,7 @@ dl{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 12%;
     padding: 20px 80px 30px 80px; /*arriba | derecha | abajo | izquierda*/
     
 }

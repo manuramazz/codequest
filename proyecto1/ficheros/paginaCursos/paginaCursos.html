@@ -7,8 +7,7 @@
         <meta name="lang" content="es-ES"/>
         <meta name="author" content="Rubén Pérez Sangiao, Manuel Ramallo Blanco">
         <link rel="stylesheet" href="/proyecto1/ficheros/paginaCursos/paginaCursos.css">
-
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <video class="VideoFondo" autoplay muted loop> 
@@ -31,7 +30,7 @@
                 </button>
             </section>
         </div>
-        <div class = "container">
+    <div class = "container">
             <aside>
                 <h3>Filtros</h3>
                 <ul>
@@ -39,15 +38,15 @@
                         Nivel
                         <form>
                             <label>
-                                <input type="radio" name="nivel" value="básico"> básico
+                                <input type="checkbox" name="nivel" value="básico"> básico
                             </label><br>
                     
                             <label>
-                                <input type="radio" name="nivel" value="medio"> medio
+                                <input type="checkbox" name="nivel" value="medio"> medio
                             </label><br>
                     
                             <label>
-                                <input type="radio" name="nivel" value="avanzado"> avanzado
+                                <input type="checkbox" name="nivel" value="avanzado"> avanzado
                             </label><br>
                         </form>
                     </li>
@@ -56,24 +55,28 @@
                         Lenguaje
                         <form>
                             <label>
-                                <input type="radio" name="lenguaje" value="c"> c
+                                <input type="checkbox" name="lenguaje" value="C"> C
                             </label><br>
                     
                             <label>
-                                <input type="radio" name="lenguaje" value="python"> python
+                                <input type="checkbox" name="lenguaje" value="GO"> GO
                             </label><br>
                     
                             <label>
-                                <input type="radio" name="lenguaje" value="java"> java
+                                <input type="checkbox" name="lenguaje" value="Java"> Java
                             </label><br>
                         </form>
                     </li>
                 </ul>
              </aside>
-         <main>
-            <ul class="lista_cursos">
-                <li>
-                    <h2><img src="/proyecto1/imagenes/c.png" width="30" height="30" alt="Curso de C">Curso básico de C</h2>
+        <main>
+            <div class="lista_cursos">
+                <section data-nivel="básico" data-lenguaje="C" class="informacion_curso">
+                    <div class="cabecera">
+                        <h2><img src="/proyecto1/imagenes/c.png" width="30" height="30" alt="Curso de C">curso básico de C</h2>
+                        <img class="flecha_ampliar" src="/proyecto1/imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
+                    </div>
+                    
                     <div class=" container_listas_curso">
                     
                     <ul class="lista_lecciones">
@@ -91,10 +94,14 @@
                         <li>Curso completado</li>
                     </ul>
                     </div>
-                </li>
+                </section>
                 
-                <li>
-                        <h2><img src="/proyecto1/imagenes/insta.png" width="30" height="30" alt="Curso de GO">Curso avanzado de GO</h2>
+                <section data-nivel="avanzado" data-lenguaje="GO" class="informacion_curso">
+                    <div class="cabecera">
+                        <h2><img src="/proyecto1/imagenes/insta.png" width="30" height="30" alt="Curso de GO">curso avanzado de GO</h2>
+                        <img class="flecha_ampliar" src="/proyecto1/imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
+                    
+                    </div>
                         <div class=" container_listas_curso">
                             <ul class="lista_lecciones">
                                 <h3>Lecciones:</h3>
@@ -108,9 +115,13 @@
                                 <li>Maestro en GO</li>
                             </ul>
                         </div>
-                </li>
-                <li>
-                    <h2><img src="/proyecto1/imagenes/java.png" width="30" height="auto" alt="Curso de Java">Curso medio de Java</h2>
+                </section>
+                <section data-nivel="medio" data-lenguaje="Java" class="informacion_curso">
+                    <div class="cabecera">
+                    <h2><img src="/proyecto1/imagenes/java.png" width="30" height="auto" alt="Curso de Java">curso medio de Java</h2>
+                    <img class="flecha_ampliar" src="/proyecto1/imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
+                    
+                </div>
                     <div class=" container_listas_curso">
                     
                     <ul class="lista_lecciones">
@@ -121,17 +132,18 @@
                         <li>Lección 4</li>
                     </ul>
         
-                    
                     <ul class="lista_logros">
                         <h3>Logros:</h3>
                         <li>Logro 1</li>
                         <li>Logro 2</li>
                     </ul>
-                    </div>
-                </li>
-            </ul>
 
+                    </div>
+                </section>
+            </div>
         </main>
-        </div>
+    </div>
+    <script src="/proyecto1/funcionInicioSesion.js"></script>
+    <script src="paginaCursos.js"></script>
     </body>
 </html>

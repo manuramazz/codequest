@@ -20,11 +20,14 @@ main {
     overflow-y: auto;
 }
 
+h2{
+    width: 80%;
+}
 h2 img {
     margin-right: 10px;
 }
 
-.lista_cursos li {
+.lista_cursos .informacion_curso {
     border: 1px solid #000;
     background-color: #b4ddf4;
     padding: 10px;
@@ -76,3 +79,17 @@ section input {
 ul li{
     padding-bottom: 20px;
 }
+
+.flecha_ampliar{
+   margin-left: auto;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+.cabecera{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10%;
+}
+
