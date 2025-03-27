@@ -41,7 +41,7 @@ $(document).ready(function() {
 
                 var mostrarCurso = false;
 
-                if ($(this).children('h2').text().includes(texto)) {
+                if ($(this).children('div').children('h2').text().includes(texto)) {
                     mostrarCurso = true;
                 }
 
@@ -57,33 +57,26 @@ $(document).ready(function() {
             });
         }
         
-    })
-
-
-    //Desplegar info de los cursos
-    $(".informacion_curso").click(function(){
-        $(this).find(".container_listas_curso").slideToggle("slow");
-      });
-
-      const rotacion = 0;
-    //Rotar flecha al desplegar curso
-    $('.flecha_ampliar').click(function() {
-        
-        // Incrementa 90 grados en cada clic
-        if(rotacion==0){
-            rotacion=90;
-            $(this).css({
-                'transform': 'rotate(' + rotacion + 'deg)',
-                'transition': 'transform 0.5s ease'
-            });
-        }else if(rotacion==90){
-            rotacion=0;
-            $(this).css({
-                'transform': 'rotate(' + rotacion + 'deg)',
-                'transition': 'transform 0.5s ease'
-            });
-        }
-        
     });
+
+
+    //Desplegar info de los cursos y girar la flecha
+    $(".informacion_curso").click(function () {
+        $(this).find(".container_listas_curso").slideToggle("slow");
+    
+        let flecha = $(this).find(".flecha_ampliar");
+    
+        let rotate = flecha.data("rotate") || 0;
+    
+        rotate = rotate === 0 ? 90 : 0;
+    
+        flecha.css({
+            "transform": `rotate(${rotate}deg)`,
+            "transition": "transform 0.5s ease"
+        });
+    
+        flecha.data("rotate", rotate);
+    });
+
 
 });
