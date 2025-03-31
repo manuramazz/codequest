@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () =>  {
+ document.addEventListener("DOMContentLoaded", () =>  {
     let username = sessionStorage.getItem("username");
     if (username) {
         let div = document.querySelector(".Titulo"); 

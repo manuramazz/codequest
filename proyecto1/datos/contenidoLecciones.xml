@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lecciones>
+    <leccion id="java-1">
+        <titulo>Introducción a XML</titulo>
+        <explicacion>En esta lección aprenderás qué es XML y cómo se estructura.</explicacion>
+        <video>https://www.youtube.com/enlace_video1</video>
+        <texto_adicional>XML se usa para almacenar y transportar datos de manera estructurada.</texto_adicional>
+    </leccion>
+
+    <leccion id="java-2">
+        <titulo>Etiquetas y Atributos</titulo>
+        <explicacion>Esta lección explica cómo usar etiquetas y atributos en XML.</explicacion>
+        <video>https://www.youtube.com/enlace_video2</video>
+        <texto_adicional>Las etiquetas se usan para definir datos y los atributos para describir propiedades de esos datos.</texto_adicional>
+    </leccion>
+
+    <leccion id="C-1">
+        <titulo>Validación de XML</titulo>
+        <explicacion>Aprenderás cómo validar un documento XML usando DTD o XML Schema.</explicacion>
+        <bibliografia> </bibliografia>
+        <video>https://www.youtube.com/enlace_video3</video>
+        <foro>La validación asegura que el XML siga una estructura correcta y coherente.</foro>
+    </leccion>
+</lecciones>
