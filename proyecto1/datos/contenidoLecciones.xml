@@ -1,24 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lecciones>
-    <leccion id="java-1">
-        <titulo>Introducción a XML</titulo>
-        <explicacion>En esta lección aprenderás qué es XML y cómo se estructura.</explicacion>
-        <video>https://www.youtube.com/enlace_video1</video>
-        <texto_adicional>XML se usa para almacenar y transportar datos de manera estructurada.</texto_adicional>
-    </leccion>
+            <!-- CURSO DE JAVA MEDIO -->
+            <J-M-1>
+                <explicacion>En Java, un objeto es una instancia de una clase que agrupa tanto datos (atributos) como comportamientos (métodos) relacionados. Cada objeto creado con new tiene su propio espacio de memoria, lo que permite manipular datos sin interferir con otros objetos del mismo tipo. Además, los objetos en Java permiten encapsulación, que es uno de los principios fundamentales de la programación orientada a objetos (POO). Esto se logra declarando atributos como private y exponiendo operaciones específicas a través de métodos public. La comunicación entre objetos se realiza mediante métodos, y la creación de objetos dinámicos se gestiona automáticamente gracias al recolector de basura de Java.</explicacion>
+                <video>https://youtu.be/IUqKuGNasdM?si=LjlJagAFdUta2q9A</video>
+                <bibliografia>https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html</bibliografia>
+                <foro>Hola, estoy tratando de entender cómo funcionan los objetos en Java. ¿Por qué cuando creo un nuevo objeto con new tengo que usar un constructor? ¿Y qué pasa si no lo declaro explícitamente?
+                </foro>
+            </J-M-1>
 
-    <leccion id="java-2">
-        <titulo>Etiquetas y Atributos</titulo>
-        <explicacion>Esta lección explica cómo usar etiquetas y atributos en XML.</explicacion>
-        <video>https://www.youtube.com/enlace_video2</video>
-        <texto_adicional>Las etiquetas se usan para definir datos y los atributos para describir propiedades de esos datos.</texto_adicional>
-    </leccion>
+            <J-M-2>
+                <explicacion>El aliasing en Java ocurre cuando dos o más referencias apuntan al mismo objeto en la memoria. Esto significa que si modificas el objeto a través de una referencia, ese cambio se verá reflejado en todas las referencias que apuntan al mismo objeto. Es un comportamiento común en Java debido a la forma en que se manejan los objetos (por referencia) en lugar de por valor.</explicacion>
+                <video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6pWm9OpC9f0?si=L_PSkARNEl_GkrKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                    </video>
+                <bibliografia>https://javaparajavatos.wordpress.com/2019/08/20/uso-de-alias/</bibliografia>
+                <foro>Hola a todos, estoy tratando de entender mejor cómo funciona el aliasing en Java. ¿Por qué cuando modifico un objeto con una referencia, también cambia en otra que aparentemente es distinta?
+                    ¡Buen punto! Eso ocurre porque en Java, cuando asignas un objeto a otra variable, ambas variables apuntan al mismo lugar en la memoria. Por ejemplo:Persona p1 = new Persona("Alice");
+                    Persona p2 = p1;  // p1 y p2 apuntan al mismo objeto Persona
+                </foro>
+            </J-M-2>
+    
+            <!-- CURSO DE C BASICO -->
+            <C-B-1>
+                <explicacion>El lenguaje de programación C es un lenguaje de propósito general desarrollado en los años 70 por Dennis Ritchie en los Laboratorios Bell. Es conocido por su eficiencia, flexibilidad y control de bajo nivel sobre la memoria, lo que lo hace ideal para sistemas operativos, aplicaciones embebidas y software de alto rendimiento. Aunque es un lenguaje de bajo nivel, también proporciona características de alto nivel que permiten desarrollar programas complejos de manera estructurada y modular.</explicacion>
+                <video>https://youtu.be/6pWm9OpC9f0?si=hX-5wT-Zog-HjsUM</video>
+                <bibliografia>https://informatica.uv.es/estguia/ATD/apuntes/laboratorio/Lenguaje-C.pdf</bibliografia>
+                <foro>Hola a todos, estoy empezando a aprender C y me pregunto si vale la pena invertir tiempo en un lenguaje tan antiguo. ¿Qué ventajas tiene C sobre otros lenguajes modernos?
+                Totalmente vale la pena aprender C. Aunque es un lenguaje antiguo, sigue siendo la base de muchos sistemas operativos (como Linux) y está muy presente en programación embebida. Aprender C te da un entendimiento profundo sobre cómo funcionan las cosas a nivel de hardware, manejo de memoria, y eficiencia en el uso de recursos. Además, conocer C facilita aprender otros lenguajes como C++, Rust o incluso Go.
+                Yo diría que C es esencial si quieres entender bien cómo funcionan los compiladores, sistemas operativos y estructuras de datos complejas. Además, C se utiliza mucho en áreas críticas donde la eficiencia y el control de recursos son primordiales. No es tan amigable como Python o Java, pero aprenderlo te hace un mejor programador.
+                </foro>
+            </C-B-1>
 
-    <leccion id="C-1">
-        <titulo>Validación de XML</titulo>
-        <explicacion>Aprenderás cómo validar un documento XML usando DTD o XML Schema.</explicacion>
-        <bibliografia> </bibliografia>
-        <video>https://www.youtube.com/enlace_video3</video>
-        <foro>La validación asegura que el XML siga una estructura correcta y coherente.</foro>
-    </leccion>
+            <C-B-2>
+                <explicacion>En C, los tipos de datos determinan la naturaleza y el tamaño de la información que puede ser almacenada y manipulada en un programa. Los tipos de datos básicos incluyen int (enteros), float (números de punto flotante), double (números de doble precisión) y char (caracteres). Además, C permite la creación de tipos de datos derivados como arrays, estructuras, uniones y punteros. Elegir el tipo de dato adecuado es esencial para optimizar el uso de memoria y garantizar la precisión en las operaciones.</explicacion>
+                <video>https://youtu.be/TRwuPth2_P4?si=k2lbrhW9Ssn4q_9O</video>
+                <bibliografia>https://www.it.uc3m.es/pbasanta/asng/course_notes/data_types_es.html</bibliografia>
+                <foro></foro>
+            </C-B-2>
+            
+            <C-B-3>
+                <explicacion>Los punteros son variables que almacenan la dirección de memoria de otra variable. En C, los punteros son una herramienta poderosa que permite manipular datos de manera eficiente, acceder a arrays, manejar estructuras dinámicas y comunicarse con funciones. Se declaran utilizando el operador * y se utilizan con el operador de referencia para obtener la dirección de una variable. Los punteros son fundamentales para tareas avanzadas como la gestión dinámica de memoria y la creación de estructuras complejas.</explicacion>
+                <video>https://youtu.be/y3K3jb3wv2I?si=-W4gnsErIC-GZSb3</video>
+                <bibliografia>https://www.it.uc3m.es/pbasanta/asng/course_notes/pointers_es.html</bibliografia>
+                <foro></foro>
+            </C-B-3>
+        <!-- CURSO DE GO AVANZADO -->
+            <GO-A-1>
+                <explicacion>Go está diseñado con un soporte robusto para la concurrencia a través de goroutines y canales. Una goroutine es una función que se ejecuta de manera concurrente con otras goroutines dentro del mismo espacio de direcciones. Son extremadamente ligeras en comparación con los hilos del sistema operativo.</explicacion>
+                <video>https://youtu.be/T_NIyqVQrx4?si=1h0Ux26LLUuClncv</video>
+                <bibliografia>https://www.digitalocean.com/community/tutorials/how-to-use-interfaces-in-go-es</bibliografia>
+                <foro></foro>
+            </GO-A-1>
+
+            <GO-A-2>
+                <explicacion>En Go, la implementación de interfaces es implícita, lo que significa que una estructura implementa una interfaz simplemente si define todos los métodos que la interfaz requiere, sin necesidad de declarar explícitamente que la implementa. Esto promueve un sistema de tipado flexible y minimalista. Además, Go permite definir métodos específicos para tipos definidos por el usuario mediante receivers. Un receiver es un argumento especial que se asocia a una función para que se convierta en un método de un tipo concreto (generalmente estructuras). Al implementar interfaces con métodos definidos mediante receivers, se pueden crear comportamientos polimórficos que facilitan la reutilización y extensibilidad del código sin comprometer la simplicidad y eficiencia características de Go.</explicacion>
+                <video>https://youtu.be/SX1gT5A9H-U?si=iiesfrTjEoQXSd7m</video>
+                <bibliografia>https://go.dev/tour/concurrency/11</bibliografia>
+                <foro>Hola a todos,
+                    Estoy aprendiendo Go y me he topado con las interfaces. Entiendo la sintaxis básica, pero no acabo de comprender cuándo es realmente útil usarlas. ¿Podrían darme ejemplos prácticos o situaciones en las que las interfaces sean la mejor opción? Gracias.
+                    ¡Hola!
+                    Las interfaces en Go son súper útiles cuando quieres definir comportamientos comunes sin atarte a un tipo específico. Por ejemplo, si tienes varias estructuras que deben implementar un método Draw() para ser renderizadas en pantalla, podrías definir algo así:
+                    type Drawable interface { Draw() string }
+                </foro>
+            </GO-A-2>
+
 </lecciones>

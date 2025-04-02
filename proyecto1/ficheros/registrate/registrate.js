@@ -1,7 +1,20 @@
 document.querySelector(".boton_inicio_sesion").addEventListener("click", function(event) {
     // Obtener el nombre de usuario ingresado
     let username = document.querySelector(".username").value;
-    let password = document.querySelector(".password").value;
+    let contraseña = document.querySelector(".contraseña").value;
+    let contraseña2 = document.querySelector(".contraseña2").value;
+    let correo = document.querySelector(".correo").value;
+
+    if (username === "" || contraseña === "" || contraseña2 === "" || correo === "") {
+        alert("Por favor, rellene todos los campos.");
+        event.preventDefault();
+        return;
+    }
+    if (contraseña !== contraseña2) {
+        alert("Las contraseñas no coinciden.");
+        event.preventDefault();
+        return;
+    }
 
     fetch('/proyecto1/datos/usuarios-contraseñas.json')
         .then(response => {
@@ -9,20 +22,19 @@ document.querySelector(".boton_inicio_sesion").addEventListener("click", functio
         })
         .then(data => {
             // Verificamos si el usuario existe en el archivo JSON
-            let usuarioValido = false;
+            let usuarioValido = true;
             data.usuarios.forEach(usuario => {
-                if (usuario.id === username && usuario.contraseña === password) {
-                    usuarioValido = true;
+                if (usuario.id === username) {
+                    usuarioValido = false;
                 }
             });
 
-            // Si el usuario es válido, redirigimos y guardamos el nombre en sessionStorage
+            // Si el usuario no existía, se añade y se redirige a la página principal
             if (usuarioValido) {
                 sessionStorage.setItem("username", username);
-
                 window.location.href = "/proyecto1/index.html";
-            } else {
-                alert("Usuario o contraseña incorrectos.");
+            }else{
+                alert("Nombre de usuario no disponible");
             }
         })
         .catch(error => {

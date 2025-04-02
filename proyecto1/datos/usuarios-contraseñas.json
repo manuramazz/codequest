@@ -1,5 +1,14 @@
 {
     "usuarios": [
-        "ruben|r","manu|m","prueba|password"
+        {
+            "id": "ruben",
+            "contraseña": "r",
+            "email": "ruben@ejemplo.com"
+        },
+        {
+            "id": "manu",
+            "contraseña": "m",
+            "email": "manu@ejemplo.com"
+        }
     ]
 }

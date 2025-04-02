@@ -39,13 +39,7 @@ h2 img {
     display: flex;
 }
 
-.lista_cursos .lista_logros li,.lista_cursos .lista_lecciones li{
-    border: 0;
-    padding: 0;
-    margin-bottom: 10px;
-    list-style-type: disc;
-    
-}
+
 .lista_lecciones{
     flex: 0 0 50%;
 }

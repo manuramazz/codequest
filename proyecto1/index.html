@@ -7,7 +7,7 @@
         <meta name="lang" content="es-ES"/>
         <meta name="author" content="Rubén Pérez Sangiao, Manuel Ramallo Blanco">
         <link rel="stylesheet" href="/proyecto1/indexEstilos.css">
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body> 
         <video class="VideoFondo" autoplay muted loop> 
@@ -26,12 +26,10 @@
                 <a href="/proyecto1/ficheros/configuracion/configuracion.html">CONFIGURACIÓN</a></li>
                 <a href="/proyecto1/ficheros/soporte/soporte.html">SOBRE NOSOTROS</a></li>
                 <div class="formulario">
-                    <form action="/proyecto1/ficheros/paginaCursos/paginaCursos.html">
                         <label>BUSCADOR <input type="text" name="txt1"></label>
                         <button type="submit">
-                            <img src="/proyecto1/imagenes/lupa.png" alt="Buscar" width="20px" height="20px">
+                            <img src="/proyecto1/imagenes/lupa.png" alt="Buscar" width="20px" height="auto">
                         </button>
-                    </form>
                 </div>
             </nav>
             
@@ -43,10 +41,9 @@
                 </div>
                 <div>
                     <h3>Lecciones:</h3>
-                    <ul>
-                        <li><a href="/proyecto1/ficheros/lecciones/lecciones.html">Introducción a C</a></li>
+                    <ul class="lista_lecciones">
+                        <li class="C-B-1">Introducción a C</a></li>
                         <li>Tipos de datos</li>
-                        <li>Funciones</li>
                         <li>Punteros</li>
                     </ul>
                 </div>
@@ -79,5 +76,6 @@
             </div>
         </section>
         <script src="/proyecto1/funcionInicioSesion.js"></script>
+        <script src="/proyecto1/index.js"></script>
     </body>
 </html>
