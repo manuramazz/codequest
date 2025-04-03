@@ -3,6 +3,7 @@
             <!-- CURSO DE JAVA MEDIO -->
             <J-M-1>
                 <curso>Curso medio de Java</curso>
+                <leccion>Objetos en Java</leccion>
                 <imagen>../../imagenes/java.png</imagen>
                 <explicacion>En Java, un objeto es una instancia de una clase que agrupa tanto datos (atributos) como comportamientos (métodos) relacionados. Cada objeto creado con new tiene su propio espacio de memoria, lo que permite manipular datos sin interferir con otros objetos del mismo tipo. Además, los objetos en Java permiten encapsulación, que es uno de los principios fundamentales de la programación orientada a objetos (POO). Esto se logra declarando atributos como private y exponiendo operaciones específicas a través de métodos public. La comunicación entre objetos se realiza mediante métodos, y la creación de objetos dinámicos se gestiona automáticamente gracias al recolector de basura de Java.</explicacion>
                 <video>
@@ -23,6 +24,8 @@
 
             <J-M-2>
                 <curso>Curso medio de Java</curso>
+                <leccion>Aliasing</leccion>
+                <imagen>../../imagenes/java.png</imagen>
                 <explicacion>El aliasing en Java ocurre cuando dos o más referencias apuntan al mismo objeto en la memoria. Esto significa que si modificas el objeto a través de una referencia, ese cambio se verá reflejado en todas las referencias que apuntan al mismo objeto. Es un comportamiento común en Java debido a la forma en que se manejan los objetos (por referencia) en lugar de por valor.</explicacion>
                 <video>
                     <width>560</width>
@@ -45,6 +48,7 @@
             <!-- CURSO DE C BASICO -->
             <C-B-1>
                 <curso>Curso básico de C</curso>
+                <leccion>Introducción a C</leccion>
                 <imagen>../../imagenes/c.png</imagen>
                 <explicacion>El lenguaje de programación C es un lenguaje de propósito general desarrollado en los años 70 por Dennis Ritchie en los Laboratorios Bell. Es conocido por su eficiencia, flexibilidad y control de bajo nivel sobre la memoria, lo que lo hace ideal para sistemas operativos, aplicaciones embebidas y software de alto rendimiento. Aunque es un lenguaje de bajo nivel, también proporciona características de alto nivel que permiten desarrollar programas complejos de manera estructurada y modular.</explicacion>
                 <video>
@@ -67,6 +71,8 @@
 
             <C-B-2>
                 <curso>Curso básico de C</curso>
+                <leccion>Tipos de datos en C</leccion>
+                <imagen>../../imagenes/c.png</imagen>
                 <explicacion>En C, los tipos de datos determinan la naturaleza y el tamaño de la información que puede ser almacenada y manipulada en un programa. Los tipos de datos básicos incluyen int (enteros), float (números de punto flotante), double (números de doble precisión) y char (caracteres). Además, C permite la creación de tipos de datos derivados como arrays, estructuras, uniones y punteros. Elegir el tipo de dato adecuado es esencial para optimizar el uso de memoria y garantizar la precisión en las operaciones.</explicacion>
                 <video>
                     <width>560</width>
@@ -79,11 +85,14 @@
                     <allowfullscreen>true</allowfullscreen>
                 </video>
                 <bibliografia>https://www.it.uc3m.es/pbasanta/asng/course_notes/data_types_es.html</bibliografia>
+                <texto_biblio>Apuntes sobre tipos de datos en C</texto_biblio>
                 <foro></foro>
             </C-B-2>
             
             <C-B-3>
                 <curso>Curso básico de C</curso>
+                <leccion>Punteros en C</leccion>
+                <imagen>../../imagenes/c.png</imagen>
                 <explicacion>Los punteros son variables que almacenan la dirección de memoria de otra variable. En C, los punteros son una herramienta poderosa que permite manipular datos de manera eficiente, acceder a arrays, manejar estructuras dinámicas y comunicarse con funciones. Se declaran utilizando el operador * y se utilizan con el operador de referencia para obtener la dirección de una variable. Los punteros son fundamentales para tareas avanzadas como la gestión dinámica de memoria y la creación de estructuras complejas.</explicacion>
                 <video>
                     <width>560</width>
@@ -96,12 +105,14 @@
                     <allowfullscreen>true</allowfullscreen>
                 </video>
                 <bibliografia>https://www.it.uc3m.es/pbasanta/asng/course_notes/pointers_es.html</bibliografia>
+                <texto_biblio>Documentación sobre punteros</texto_biblio>
                 <foro></foro>
             </C-B-3>
         <!-- CURSO DE GO AVANZADO -->
             <GO-A-1>
                 <curso>Curso avanzado de GO</curso>
-                <imagen>../../imagenes/go!.png</imagen>
+                <leccion>Concurrencia en GO</leccion>
+                <imagen>../../imagenes/goLogo.png</imagen>
                 <explicacion>Go está diseñado con un soporte robusto para la concurrencia a través de goroutines y canales. Una goroutine es una función que se ejecuta de manera concurrente con otras goroutines dentro del mismo espacio de direcciones. Son extremadamente ligeras en comparación con los hilos del sistema operativo.</explicacion>
                 <video>
                     <width>560</width>
@@ -113,12 +124,15 @@
                     <referrerpolicy>strict-origin-when-cross-origin</referrerpolicy>
                     <allowfullscreen>true</allowfullscreen>
                 </video>
-                <bibliografia>https://www.digitalocean.com/community/tutorials/how-to-use-interfaces-in-go-es</bibliografia>
+                <bibliografia>https://go.dev/tour/concurrency/11</bibliografia>
+                <texto_biblio>Documentación oficial del lenguaje</texto_biblio>
                 <foro></foro>
             </GO-A-1>
 
             <GO-A-2>
                 <curso>Curso avanzado de GO</curso>
+                <leccion>Interfaces en GO</leccion>
+                <imagen>../../imagenes/goLogo.png</imagen>
                 <explicacion>En Go, la implementación de interfaces es implícita, lo que significa que una estructura implementa una interfaz simplemente si define todos los métodos que la interfaz requiere, sin necesidad de declarar explícitamente que la implementa. Esto promueve un sistema de tipado flexible y minimalista. Además, Go permite definir métodos específicos para tipos definidos por el usuario mediante receivers. Un receiver es un argumento especial que se asocia a una función para que se convierta en un método de un tipo concreto (generalmente estructuras). Al implementar interfaces con métodos definidos mediante receivers, se pueden crear comportamientos polimórficos que facilitan la reutilización y extensibilidad del código sin comprometer la simplicidad y eficiencia características de Go.</explicacion>
                 <video>
                     <width>560</width>
@@ -130,7 +144,8 @@
                     <referrerpolicy>strict-origin-when-cross-origin</referrerpolicy>
                     <allowfullscreen>true</allowfullscreen>
                 </video>
-                <bibliografia>https://go.dev/tour/concurrency/11</bibliografia>
+                <bibliografia>https://www.digitalocean.com/community/tutorials/how-to-use-interfaces-in-go-es</bibliografia>
+                <texto_biblio>Tutoriales sobre iinterfaces en lenguaje GO</texto_biblio>
                 <foro><p>Hola a todos,
                     Estoy aprendiendo Go y me he topado con las interfaces. Entiendo la sintaxis básica, pero no acabo de comprender cuándo es realmente útil usarlas. ¿Podrían darme ejemplos prácticos o situaciones en las que las interfaces sean la mejor opción? Gracias.
                     </p><p>¡Hola!

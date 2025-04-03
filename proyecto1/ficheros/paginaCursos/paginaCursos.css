@@ -86,4 +86,8 @@ ul li{
     flex-wrap: wrap;
     gap:10%;
 }
+.cabecera h2{
+    display: flex;
+    align-items: center;
+}
 

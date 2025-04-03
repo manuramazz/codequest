@@ -27,8 +27,7 @@ function cargarLeccion(texto) {
                 let leccion = xmlDoc.getElementsByTagName(texto)[0];
                 
                //seteo todos los elementos 
-               let strClase = leccion.getElementsByTagName("curso")[0].textContent;
-               console.log(strClase);
+                let strLeccion = leccion.getElementsByTagName("leccion")[0].textContent;
                 let strExplicacion = leccion.getElementsByTagName("explicacion")[0].textContent;
                 let strForo = leccion.getElementsByTagName("foro")[0].innerHTML;
                 let video = leccion.getElementsByTagName("video")[0];
@@ -36,7 +35,7 @@ function cargarLeccion(texto) {
                 let strBiblio = leccion.getElementsByTagName("texto_biblio")[0].textContent;
 
                 
-                contenido.getElementsByClassName("nombreClase")[0].textContent = strClase;
+                contenido.getElementsByClassName("nombreClase")[0].textContent = strLeccion;
                 contenido.getElementsByClassName("explicacion")[0].textContent = strExplicacion;
                 contenido.getElementsByClassName("foro")[0].innerHTML = strForo;
 
@@ -58,7 +57,7 @@ function cargarLeccion(texto) {
 
                 //DIV DE LA CABECERA PARA PONER IMAGEN Y TITULO
                 let tituloLeccion = document.getElementsByClassName("titulo_leccion")[0]; 
-
+                let strClase = leccion.getElementsByTagName("curso")[0].textContent;
 
                 tituloLeccion.getElementsByClassName("clase")[0].textContent = strClase;
 
