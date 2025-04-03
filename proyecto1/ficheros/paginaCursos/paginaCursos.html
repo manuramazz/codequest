@@ -6,19 +6,19 @@
         <meta name="description" content="Página de búsqueda de cursos" />
         <meta name="lang" content="es-ES"/>
         <meta name="author" content="Rubén Pérez Sangiao, Manuel Ramallo Blanco">
-        <link rel="stylesheet" href="/proyecto1/ficheros/paginaCursos/paginaCursos.css">
+        <link rel="stylesheet" href="paginaCursos.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <video class="VideoFondo" autoplay muted loop> 
-            <source src="/proyecto1/imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
+            <source src="../../imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
         </video>
         <header>
             <figure class="logo">
-                <a href ="/proyecto1/index.html"><img src="/proyecto1/imagenes/logoCodequestEntero.png"></a>
+                <a href ="../index/index.html"><img src="../../imagenes/logoCodequestEntero.png"></a>
             </figure>
             <div class="Titulo">
-                <a href="/proyecto1/ficheros/registrate/registrate.html">Iniciar sesión/Registrarte</a>
+                <a href="../registrate/registrate.html">Iniciar sesión/Registrarte</a>
             </div>
         </header>
         <div class="buscador_cursos">
@@ -26,7 +26,7 @@
                 <h4>BUSCADOR DE CURSOS</h4>
                 <label><input type="text" placeholder="busca aqui..."></label>
                 <button type="submit">
-                    <img src="/proyecto1/imagenes/lupa.png" alt="Buscar" width="20px" height="20px">
+                    <img src="../../imagenes/lupa.png" alt="Buscar" width="20px" height="20px">
                 </button>
             </section>
         </div>
@@ -73,8 +73,8 @@
             <div class="lista_cursos">
                 <section data-nivel="básico" data-lenguaje="C" class="informacion_curso">
                     <div class="cabecera">
-                        <h2><img src="/proyecto1/imagenes/c.png" width="30" height="30" alt="Curso de C">curso básico de C</h2>
-                        <img class="flecha_ampliar" src="/proyecto1/imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
+                        <h2><img src="../../imagenes/c.png" width="30" height="30" alt="Curso de C">curso básico de C</h2>
+                        <img class="flecha_ampliar" src="../../imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
                     </div>
                     
                     <div class=" container_listas_curso">
@@ -82,9 +82,8 @@
                     <ul class="lista_lecciones">
                         <h3>Lecciones:</h3>
                         <li class="C-B-1">Introducción a C</li>
-                        <li>Tipos de datos</li>
-                        <li>Funciones</li>
-                        <li>Punteros</li>
+                        <li class="C-B-2">Tipos de datos</li>
+                        <li class="C-B-3">Punteros</li>
                     </ul>
         
                     
@@ -98,15 +97,15 @@
                 
                 <section data-nivel="avanzado" data-lenguaje="GO" class="informacion_curso">
                     <div class="cabecera">
-                        <h2><img src="/proyecto1/imagenes/insta.png" width="30" height="30" alt="Curso de GO">curso avanzado de GO</h2>
-                        <img class="flecha_ampliar" src="/proyecto1/imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
+                        <h2><img src="../../imagenes/goLogo.png" width="80" height="50" alt="Curso de GO">curso avanzado de GO</h2>
+                        <img class="flecha_ampliar" src="../../imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
                     
                     </div>
                         <div class=" container_listas_curso">
                             <ul class="lista_lecciones">
                                 <h3>Lecciones:</h3>
-                                <li>Leccion 1</li>
-                                <li>leccion 2</li>
+                                <li class="GO-A-1">Concurrencia en GO</li>
+                                <li class="GO-A-2">Interfaces</li>
                             </ul>
                             <ul class="lista_logros">
                                 <h3>Logros:</h3>
@@ -118,18 +117,16 @@
                 </section>
                 <section data-nivel="medio" data-lenguaje="Java" class="informacion_curso">
                     <div class="cabecera">
-                    <h2><img src="/proyecto1/imagenes/java.png" width="30" height="auto" alt="Curso de Java">curso medio de Java</h2>
-                    <img class="flecha_ampliar" src="/proyecto1/imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
+                    <h2><img src="../../imagenes/java.png" width="30" height="auto" alt="Curso de Java">curso medio de Java</h2>
+                    <img class="flecha_ampliar" src="../../imagenes/fechaAmpliar.png" width="30" height="30" alt="flecha para Ampliar">
                     
                 </div>
                     <div class=" container_listas_curso">
                     
                     <ul class="lista_lecciones">
                         <h3>Lecciones:</h3>
-                        <li>Lección 1</li>
-                        <li>Lección 2</li>
-                        <li>Lección 3</li>
-                        <li>Lección 4</li>
+                        <li class="J-M-1">Objetos en Java</li>
+                        <li class="J-M-2">Aliasing</li>
                     </ul>
         
                     <ul class="lista_logros">
@@ -143,7 +140,7 @@
             </div>
         </main>
     </div>
-    <script src="/proyecto1/funcionInicioSesion.js"></script>
+    <script src="../../funcionInicioSesion.js"></script>
     <script src="paginaCursos.js"></script>
     </body>
 </html>

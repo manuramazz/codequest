@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CODEQUEST</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Página principal" />
+        <meta name="lang" content="es-ES"/>
+        <meta name="author" content="Rubén Pérez Sangiao, Manuel Ramallo Blanco">
+        <link rel="stylesheet" href="indexEstilos.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body> 
+        <video class="VideoFondo" autoplay muted loop> 
+            <source src="../../imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
+        </video>
+        <header>
+            <figure class="logo">
+                <img src="../../imagenes/logoCodequestEntero.png">
+            </figure>
+            <div class="Titulo">
+                <a href="../registrate/registrate.html">Iniciar sesión/Registrarte</a>
+            </div>
+        </header>
+            <nav>
+                <a href="../panelUsuario/panelUsuarioCursos/panelUsuarioCursos.html">PANEL DE USUARIO</a></li>
+                <a href="../configuracion/configuracion.html">CONFIGURACIÓN</a></li>
+                <a href="../soporte/soporte.html">SOBRE NOSOTROS</a></li>
+                <div class="formulario">
+                        <label>BUSCADOR <input type="text" name="txt1"></label>
+                        <button type="submit">
+                            <img src="../../imagenes/lupa.png" alt="Buscar" width="20px" height="auto">
+                        </button>
+                </div>
+            </nav>
+            
+        <main>
+            <h2 id="mejores_cursos_titulo">Nuestro mejores cursos a un click!!!</h2>
+            <article class="container" id="curso_destacado">
+                <div>
+                    <h3 id="titulo_curso_destacado"><img src="../../imagenes/c.png" width="30" height="30" alt="Curso de C">Curso destacado: Curso básico de C</h3>
+                </div>
+                <div>
+                    <h3>Lecciones:</h3>
+                    <ul class="lista_lecciones">
+                        <li class="C-B-1">Introducción a C</a></li>
+                        <li>Tipos de datos</li>
+                        <li>Punteros</li>
+                    </ul>
+                </div>
+            </article>
+            <figure class="container" id="fotos">
+                <img src="../../imagenes/java.png">
+                <img src="../../imagenes/python.png">
+                <img src="../../imagenes/c.png">
+            </figure>
+        </main>
+        <section>
+            <div>
+                <h2>Cambios recientes</h2>
+                <p class="dividir">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a interdum mauris, ac consequat velit. Duis condimentum porta condimentum. Ut luctus, nulla a cursus venenatis, sapien enim dictum odio, ac luctus quam orci at lectus. Fusce pharetra nisi neque, vel egestas massa tempus sit amet. Nunc facilisis diam sit amet dui tincidunt consectetur. Donec pharetra vulputate est. Phasellus at aliquet massa. Aenean vel neque eleifend, feugiat tellus eget, aliquet lacus. Nunc facilisis sit amet metus eu finibus. Ut at sapien id risus molestie vehicula ac at odio. Nulla pretium, ex vel egestas ornare, massa eros dictum ipsum, vel porta nunc massa quis erat. Pellentesque venenatis, justo non tincidunt ornare, erat libero vehicula diam, nec cursus sem nunc non leo. Curabitur mollis turpis aliquam, vestibulum lorem ac, dictum sem.</p>  
+            </div>
+            <div>
+                <h2>Noticias</h2>
+                <p class="dividir">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    In a interdum mauris, ac consequat velit. 
+                    Duis condimentum porta condimentum. 
+                    Ut luctus, nulla a cursus venenatis, sapien enim dictum odio, ac luctus quam orci at lectus. 
+                    Fusce pharetra nisi neque, vel egestas massa tempus sit amet. 
+                    Nunc facilisis diam sit amet dui tincidunt consectetur. 
+                    Donec pharetra vulputate est. Phasellus at aliquet massa. 
+                    Aenean vel neque eleifend, feugiat tellus eget, aliquet lacus.
+                    Nunc facilisis sit amet metus eu finibus. Ut at sapien id risus molestie vehicula ac at odio. 
+                    Nulla pretium, ex vel egestas ornare, massa eros dictum ipsum, vel porta nunc massa quis erat. 
+                    Pellentesque venenatis, justo non tincidunt ornare, erat libero vehicula diam, nec cursus sem nunc non leo. 
+                    Curabitur mollis turpis aliquam, vestibulum lorem ac, dictum sem.</p>  
+            </div>
+        </section>
+        <script src="../../funcionInicioSesion.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

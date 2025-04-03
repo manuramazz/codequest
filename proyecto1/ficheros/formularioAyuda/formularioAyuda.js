@@ -27,23 +27,7 @@
         document.getElementById('rangoUrgencia').value = 0;
         document.getElementById('valorRango').textContent = '0';
 
-        // Limpiar primera columna
-        /*document.getElementById('campoNombre').value = '';
-        document.getElementById('campoApellidos').value = '';
-        document.getElementById('campoCorreo').value = '';
-        document.getElementById('campoTelefono').value = '';
         
-        // Limpiar segunda columna
-        document.getElementById('campoSeleccionarProblema').selectedIndex = 0;
-        document.getElementById('CampoOtroProblema').value = '';
-        
-        // Limpiar tercera columna
-        document.getElementById('campoSeleccionarSO').selectedIndex = 0;
-        document.getElementById('campoSeleccionarNavegador').selectedIndex = 0;
-        document.getElementById('rangoUrgencia').value = 0;
-        document.getElementById('valorRango').textContent = '0';*/
-        
-        //alert("Formulario borrado");
         
         if(document.getElementById("cajaTexto")){
             

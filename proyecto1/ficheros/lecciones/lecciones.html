@@ -4,38 +4,43 @@
         <title>Codequest</title>
         <meta charset="utf-8">
         <meta name="description" content="Lección" />
-        <link rel="stylesheet" href="/proyecto1/ficheros/lecciones/leccionesEstilos.css">
+        <link rel="stylesheet" href="leccionesEstilos.css">
 
 
     </head>
     <body> 
         <video class="VideoFondo" autoplay muted loop> 
-            <source src="/proyecto1/imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
+            <source src="../../imagenes/pruebaVideoStockFondo.mp4"> Tu navegador no soporta video HTML5  
         </video>
         <header>
             <figure class="logo">
-                <a href ="/proyecto1/index.html"><img src="/proyecto1/imagenes/logoCodequestEntero.png"></a>
+                <a href ="../index/index.html"><img src="../../imagenes/logoCodequestEntero.png"></a>
             </figure>
             <div class="Titulo">
-                <a href="/proyecto1/ficheros/registrate/registrate.html">Iniciar sesión/Registrarte</a>
+                <a href="../registrate/registrate.html">Iniciar sesión/Registrarte</a>
             </div>
         </header>
+
+
+
         <main>
             <div class="titulo_leccion">
-                <figure><img src="/proyecto1/imagenes/c.png" class="imagen_titulo"></figure>
+                <figure><img class="imagen_titulo"></figure>
                 <div class="texto_titulo">
-                    <h2><Strong>Curso básico de C</Strong></h2>
-                    <h3>Profesor: Profesor1</h3>
+                    <h2 class="clase"></h2>
                 </div>
             </div>
             <div class="contenido">
             <section>
-                <h3><!--AQUI VA EL TITULO DE LA LECCION--></h3>
+                <h3 class="nombreClase"><!--AQUI VA EL TITULO DE LA LECCION--></h3>
                 <p class="explicacion"> </p>
-                <video class="video"><!--AQUI VA EL VIDEO QUE QUERAMOS --> </video>
+                <iframe class="video"><!--AQUI VA EL VIDEO QUE QUERAMOS --> </iframe>
 
                 <h4>Bibliografía</h4>
-                <p class="bibliografia"></p>  
+                <ul>
+                    <li><a class="bibliografia"> <!--AQUI VA LA BIOGRAFIA--> </a> </li>
+                </ul>
+                 
             </section>
             <aside>
                 <h3>Foro de discusiones</h3>
@@ -43,8 +48,8 @@
             </aside>
             </div>
         </main>
-        <script src="/proyecto1/funcionInicioSesion.js"></script>
+        <script src="../../funcionInicioSesion.js"></script>
         
     </body>
-    <script src="/proyecto1/ficheros/lecciones/seleccionarLecciones.js"></script>
+    <script src="../lecciones/seleccionarLecciones.js"></script>
 </html>

@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("button[type='submit']").click(function(event) {
         event.preventDefault();
         let texto = $('input[type="text"]').val();
-        window.location.href = `ficheros/paginaCursos/paginaCursos.html?texto=${encodeURIComponent(texto)}`;
+        window.location.href = `../paginaCursos/paginaCursos.html?texto=${encodeURIComponent(texto)}`;
     });
 });
 
