@@ -10,7 +10,7 @@ $(document).ready(function() {
         event.stopPropagation();
         let texto = $(this).attr('class');
         console.log(texto);
-        window.location.href = `/proyecto1/ficheros/lecciones/lecciones.html?texto=${encodeURIComponent(texto)}`;
+        window.location.href = `ficheros/lecciones/lecciones.html?texto=${encodeURIComponent(texto)}`;
     });
 });
 

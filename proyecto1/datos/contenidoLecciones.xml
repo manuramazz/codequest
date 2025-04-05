@@ -52,8 +52,8 @@
                 <imagen>../../imagenes/c.png</imagen>
                 <explicacion>El lenguaje de programación C es un lenguaje de propósito general desarrollado en los años 70 por Dennis Ritchie en los Laboratorios Bell. Es conocido por su eficiencia, flexibilidad y control de bajo nivel sobre la memoria, lo que lo hace ideal para sistemas operativos, aplicaciones embebidas y software de alto rendimiento. Aunque es un lenguaje de bajo nivel, también proporciona características de alto nivel que permiten desarrollar programas complejos de manera estructurada y modular.</explicacion>
                 <video>
-                    <width>80%</width>
-                    <height>100%</height>
+                    <width>560</width>
+                    <height>315</height>
                     <src>https://www.youtube.com/embed/6pWm9OpC9f0?si=QIA67zRO2fPD26Rb</src>
                     <title>YouTube video player</title>
                     <frameborder>0</frameborder>

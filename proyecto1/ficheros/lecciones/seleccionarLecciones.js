@@ -41,7 +41,7 @@ function cargarLeccion(texto) {
 
                 //Insertar video embebido (tenemos que ponerle los atributos a mano porque sino google lo bloqueaba)
                 contenido.getElementsByClassName("video")[0].setAttribute('width',video.getElementsByTagName("width")[0].textContent);
-                contenido.getElementsByClassName("video")[0].setAttribute('aspect-ratio',video.getElementsByTagName("height")[0].textContent);
+                contenido.getElementsByClassName("video")[0].setAttribute('height',video.getElementsByTagName("height")[0].textContent);
                 contenido.getElementsByClassName("video")[0].setAttribute('src',video.getElementsByTagName("src")[0].textContent);
                 contenido.getElementsByClassName("video")[0].setAttribute('frameborder',video.getElementsByTagName("frameborder")[0].textContent);
                 contenido.getElementsByClassName("video")[0].setAttribute('allow',video.getElementsByTagName("allow")[0].textContent);
