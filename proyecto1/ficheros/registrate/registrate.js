@@ -32,7 +32,7 @@ document.querySelector(".boton_inicio_sesion").addEventListener("click", functio
             // Si el usuario no existía, se añade y se redirige a la página principal
             if (usuarioValido) {
                 sessionStorage.setItem("username", username);
-                window.location.href = "/proyecto1/index.html";
+                window.location.href = "../index/index.html";
             }else{
                 alert("Nombre de usuario no disponible");
             }

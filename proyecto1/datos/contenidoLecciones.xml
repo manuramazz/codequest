@@ -145,7 +145,7 @@
                     <allowfullscreen>true</allowfullscreen>
                 </video>
                 <bibliografia>https://www.digitalocean.com/community/tutorials/how-to-use-interfaces-in-go-es</bibliografia>
-                <texto_biblio>Tutoriales sobre iinterfaces en lenguaje GO</texto_biblio>
+                <texto_biblio>Tutoriales sobre interfaces en lenguaje GO</texto_biblio>
                 <foro><p>Hola a todos,
                     Estoy aprendiendo Go y me he topado con las interfaces. Entiendo la sintaxis básica, pero no acabo de comprender cuándo es realmente útil usarlas. ¿Podrían darme ejemplos prácticos o situaciones en las que las interfaces sean la mejor opción? Gracias.
                     </p><p>¡Hola!
