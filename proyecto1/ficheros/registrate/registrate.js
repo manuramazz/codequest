@@ -16,7 +16,7 @@ document.querySelector(".boton_inicio_sesion").addEventListener("click", functio
         return;
     }
 
-    fetch('/proyecto1/datos/usuarios-contraseñas.json')
+    fetch('../../datos/usuarios-contraseñas.json')
         .then(response => {
             return response.json();
         })

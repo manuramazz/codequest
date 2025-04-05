@@ -3,8 +3,10 @@
     <head>
         <title>Codequest</title>
         <meta charset="utf-8">
-        <meta name="description" content="Panel de usuario" />
-        <link rel="stylesheet" href="panelUsuarioCursosEstilos.css">
+        <meta name="description" content="Sección de información de usuario en el panel de usuario" />
+        <meta name="lang" content="es-ES"/>
+        <meta name="author" content="Rubén Pérez Sangiao, Manuel Ramallo Blanco">
+        <link rel="stylesheet" href="panelUsuarioInfoEstilos.css">
     </head>
     <body> 
         <video class="VideoFondo" autoplay muted loop> 
@@ -15,27 +17,22 @@
                 <a href ="../../index/index.html"><img src="../../../imagenes/logoCodequestEntero.png"></a>
             </figure>
             <div class="Titulo">
-                <a href="../../registrate/registrate.html">Iniciar sesión/Registrarte</a>
+                <a href="../../registrate/registrate.html">Iniciar sesión / Registrarte</a>
             </div>
         </header>
         <main>
             <h2><strong>PANEL DE USUARIO</strong></h2>
             <section>
-                <h4>Cursos</h4>
-                <p>Aquí se mostrará una lista de los cursos en los que está trabajando en este momento: </p>
-                <ol>
-                    <li>
-                        Curso básico de C
-                    </li>
-                    <li>
-                        Curso avanzado de Go
-                    </li>
-                </ol>
+                <h4>Tu sesión</h4>
+                <p id="parrafo_usuario">¡Inicia sesión pulsando en el botón en la zona superior derecha!</p>
+                <ul id="lista_informacion">
+                </ul>
             </section>
             <section>
                <h4><a href="../panelUsuarioCalendario/panelUsuarioCalendario.html">Calendario</a></h4>
             </section>
         </main>
-        <script src="../../../funcionInicioSesion.js"></script>    
+        <script src="../../../funcionInicioSesion.js"></script> 
+        <script src="panelUsuarioInfo.js"></script>   
     </body>
 </html>

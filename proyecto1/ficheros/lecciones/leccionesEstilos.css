@@ -1,4 +1,4 @@
-@import url(/proyecto1/estilosBase.css);
+@import url(../../estilosBase.css);
 
 .contenido {
     display: flex;
@@ -12,7 +12,7 @@
     width: 100%;
 }
 
-figure{
+.titulo_leccion figure{
     width: 10%;
     padding: 2%;
 }
@@ -35,6 +35,7 @@ section{
     padding: 5px 20px;
     padding-bottom: 30px;
 }
+
 aside{
     width: 30%;
     padding: 10px 20px;
@@ -49,4 +50,8 @@ aside{
 .h2{
     font-weight: bolder;
 }
+
+@media (max-width: 767px) { /* Móvil */
+    body { font-size: 12px; }
+  }
 

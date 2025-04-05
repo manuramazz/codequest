@@ -96,3 +96,7 @@ section {
     align-items: center;
     gap: 15px;
 }
+
+.cambios, .noticias{
+    width: 50%;
+}

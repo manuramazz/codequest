@@ -1,4 +1,4 @@
-@import url(/proyecto1/estilosBase.css);
+@import url(../../estilosBase.css);
 
 h4{
     font-weight: strong;
@@ -10,3 +10,7 @@ section{
     padding-left: 15%;
     padding-right: 15%;
 }  
+
+@media (max-width: 767px) { /* Móvil */
+    body { font-size: 12px; }
+  }

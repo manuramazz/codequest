@@ -1,13 +1,22 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size: 100%;
     text-align: justify;
     padding: 0;
-    margin: 0 150px;
+    margin: 0 11%;
     box-sizing: border-box;
     background-color: #000000;
 
 
+}
+
+.logo > img{
+    width: 75%;
+    height: auto;
+}
+.logo > a > img{
+    width: 75%;
+    height: auto;
 }
 
 header{
@@ -54,6 +63,7 @@ aside{
 .Titulo{
     width: 27.2%;
     height: 100%;
+    font-size: 90%;
     margin-right: 0;
     display: flex;
     justify-content: center;
@@ -102,3 +112,16 @@ a:visited, a:link{
     list-style-type: disc;
     
 }
+
+.cambios{
+    width: 50%;
+}
+
+.noticias{
+    width: 50%;
+}
+
+@media (max-width: 767px) { /* Móvil */
+    body { font-size: 12px; }
+  }
+

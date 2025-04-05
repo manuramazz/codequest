@@ -3,7 +3,7 @@ document.querySelector(".boton_inicio_sesion").addEventListener("click", functio
     let username = document.querySelector(".username").value;
     let password = document.querySelector(".password").value;
 
-    fetch('/proyecto1/datos/usuarios-contraseñas.json')
+    fetch('../../datos/usuarios-contraseñas.json')
         .then(response => {
             return response.json();
         })
@@ -20,7 +20,7 @@ document.querySelector(".boton_inicio_sesion").addEventListener("click", functio
             if (usuarioValido) {
                 sessionStorage.setItem("username", username);
 
-                window.location.href = "/proyecto1/index.html";
+                window.location.href = "../../index.html";
             } else {
                 alert("Usuario o contraseña incorrectos.");
             }
